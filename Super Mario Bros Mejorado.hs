@@ -145,5 +145,5 @@ empleadoConMasInvirtio  reparaciones  =  maximoTrabajadorPorCriterio sumarHerram
 
 
 sumarHerramientas :: Plomero -> Float
-sumarHerramientas  plomero = sum (map precio (herramienta plomero))
+sumarHerramientas   = sum . map precio .herramienta --Cambio para eliminar parametros
 --00:22 Terminado
